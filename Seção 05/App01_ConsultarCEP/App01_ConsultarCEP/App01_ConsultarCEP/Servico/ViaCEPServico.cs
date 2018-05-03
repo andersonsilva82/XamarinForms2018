@@ -22,6 +22,8 @@ namespace App01_ConsultarCEP.Servico
 
             Endereco end = JsonConvert.DeserializeObject<Endereco>(Conteudo); // converte o Json recebido da net em objeto
 
+            if (end.cep == null) return null;
+
             return end;
 
         }
