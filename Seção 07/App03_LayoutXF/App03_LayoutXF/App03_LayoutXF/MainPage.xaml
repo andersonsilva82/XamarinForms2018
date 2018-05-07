@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:App03_LayoutXF"
+             x:Class="App03_LayoutXF.MainPage">
+
+	<Label Text="Welcome to Xamarin.Forms!" 
+           VerticalOptions="Fill" 
+           HorizontalOptions="Center" />
+
+    <Button Text="Stack Start1" Clicked="GoPageStack" VerticalOptions="Start" />
+    <Button Text="Stack Fill" Clicked="GoPageStack" VerticalOptions="Fill" />
+    <Button Text="Stack End" Clicked="GoPageStack" VerticalOptions="End" />
+    <Button Text="Stack Start2" Clicked="GoPageStack" VerticalOptions="Start" />
+    <Button Text="Stack Start3" Clicked="GoPageStack" VerticalOptions="Start" />
+    <Button Text="Stack Start4" Clicked="GoPageStack" VerticalOptions="CenterAndExpand" />
+
+</ContentPage>

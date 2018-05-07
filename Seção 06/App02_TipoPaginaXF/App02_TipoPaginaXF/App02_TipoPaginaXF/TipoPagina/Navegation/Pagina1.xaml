@@ -2,7 +2,8 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="App02_TipoPaginaXF.TipoPagina.Navegation.Pagina1"
-             Title="Título da Página 1">
+             Title="Título da Página 1"
+             Icon="play.png">
     <ContentPage.ToolbarItems>
         <ToolbarItem Text="Pesquisa" Icon="xamarin_pages.png"/>
         <ToolbarItem Text="Detalhes" Icon="play.png"/>
@@ -18,6 +19,7 @@
                 HorizontalOptions="CenterAndExpand" />
             <Button Text="Ir para página 2" Clicked="MudarParaPagina2" />
             <Button Text="Chamar Modal" Clicked="ChamarModal" />
+            <Button Text="Chamar Master" Clicked="ChamarMaster" />
             
         </StackLayout>
     </ContentPage.Content>

@@ -28,5 +28,13 @@ namespace App02_TipoPaginaXF.TipoPagina.Navegation
             // Esta forma de chamar a página mantem o histórico - somente para navigation 
             Navigation.PushModalAsync(new Modal());
         }
+
+        private void ChamarMaster(object sender, EventArgs args)
+        {
+            // metodo para chamar MasterDetails, TabbedPage e CarouselPage
+            App.Current.MainPage = new Master.Master();
+            
+        }
+
     }
 }

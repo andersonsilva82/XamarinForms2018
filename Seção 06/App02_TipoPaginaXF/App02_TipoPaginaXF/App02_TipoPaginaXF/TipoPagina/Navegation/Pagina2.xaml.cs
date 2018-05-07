@@ -19,7 +19,16 @@ namespace App02_TipoPaginaXF.TipoPagina.Navegation
 
         private void VoltarPagina1(object sender, EventArgs args)
         {
-            Navigation.PopAsync();
+           try
+            {
+                Navigation.PopAsync();
+            }
+            catch (Exception e)
+            {
+                DisplayAlert("ERRO CRÍTICO", e.Message, "OK");
+                DisplayActionSheet("Teste titulo", "cancelar", "Destriur");
+            }
+                
         }
 	}
 }

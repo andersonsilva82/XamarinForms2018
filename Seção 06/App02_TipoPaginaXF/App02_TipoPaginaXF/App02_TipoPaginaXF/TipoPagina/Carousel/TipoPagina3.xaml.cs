@@ -22,7 +22,8 @@ namespace App02_TipoPaginaXF.TipoPagina.Carousel
             // App.Current.MainPage = new Navegation.Pagina1(); // forma de  chamar sem instanciar a NavigationPAge
             // Não funciona para paginas depois que tem navigationpage gera exception
 
-            App.Current.MainPage = new NavigationPage(new Navegation.Pagina1()) { BarBackgroundColor = Color.BlueViolet };
+            //App.Current.MainPage = new NavigationPage(new Navegation.Pagina1()) { BarBackgroundColor = Color.BlueViolet };            
+            App.Current.MainPage = new Tabbed.Abas();
             // aqui é como se fosse uma pagina dentro de outra
         }
 
