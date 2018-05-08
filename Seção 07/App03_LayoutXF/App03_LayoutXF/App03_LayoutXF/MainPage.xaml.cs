@@ -26,5 +26,9 @@ namespace App03_LayoutXF
             }
             
         }
+        private void GoPageGrid(object sender, EventArgs args)
+        {
+            Navigation.PushAsync(new Layouts.Grid.GridPage());                   
+        }
 	}
 }
