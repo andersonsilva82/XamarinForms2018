@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App03_LayoutXF.Layouts.Absolute.AbsolutePage">
+    <ContentPage.Content>
+        <AbsoluteLayout>
+              <!-- AbsoluteLayout.LayoutBounds="X, Y, W, H" -->
+            <BoxView AbsoluteLayout.LayoutBounds="0,0,200,100" BackgroundColor="Bisque"/>
+            <BoxView AbsoluteLayout.LayoutBounds="50,50,200,100" BackgroundColor="CadetBlue"/>
+            <BoxView AbsoluteLayout.LayoutBounds="100,100,200,100" BackgroundColor="DarkMagenta"/>
+
+
+            <BoxView AbsoluteLayout.LayoutFlags="WidthProportional" AbsoluteLayout.LayoutBounds="0,400,0.5,100" BackgroundColor="Yellow"/> <!-- 0.5 sigifica 50% da tela-->
+            <BoxView AbsoluteLayout.LayoutFlags="XProportional" AbsoluteLayout.LayoutBounds="0.8,100,200,100" BackgroundColor="GreenYellow"/>
+            
+
+        </AbsoluteLayout>
+    </ContentPage.Content>
+</ContentPage>

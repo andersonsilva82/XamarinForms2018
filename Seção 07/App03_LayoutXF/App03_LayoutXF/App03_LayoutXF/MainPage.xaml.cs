@@ -30,5 +30,20 @@ namespace App03_LayoutXF
         {
             Navigation.PushAsync(new Layouts.Grid.GridPage());                   
         }
+
+        private void GoPageAbsolute(object sender, EventArgs args)
+        {
+            Navigation.PushAsync(new Layouts.Absolute.AbsolutePage());
+        }
+
+        private void GoPageRelative(object sender, EventArgs args)
+        {
+            Navigation.PushAsync(new Layouts.Relative.RelativePage());
+        }
+
+        private void GoPageScroll(object sender, EventArgs args)
+        {
+            Navigation.PushAsync(new Layouts.Scroll.ScrollPage());
+        }
 	}
 }

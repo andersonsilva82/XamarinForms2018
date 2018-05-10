@@ -13,7 +13,8 @@ namespace App03_LayoutXF
 		{
 			InitializeComponent();
 
-			MainPage = new NavigationPage(new App03_LayoutXF.MainPage() { Title = "Nav" }) ;
+			MainPage = new NavigationPage(new App03_LayoutXF.MainPage() { Title = "Título" }) ;
+            
 		}
 
 		protected override void OnStart ()
