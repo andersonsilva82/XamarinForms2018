@@ -18,12 +18,17 @@ namespace App02_Xamarin.Master
 
         private void GoPerfil1(object sender, EventArgs args)
         {
-            Navigation.PushAsync(new Pages.Perfil1());
+
+            Detail = new Pages.Perfil1();
+            IsPresented = false;
+            //Navigation.PushAsync(new Pages.Perfil1());
         }
 
         private void GoSobre(object sender, EventArgs args)
         {
-            Navigation.PushAsync(new Pages.Xamarin());
+            Detail = new Pages.Xamarin();
+            IsPresented = false;
+            //Navigation.PushAsync(new Pages.Xamarin());
         }
 
     }

@@ -3,12 +3,24 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="App02_Xamarin.Pages.Perfil1">
     <ContentPage.Content>
+        <ScrollView Orientation="Horizontal">
         <StackLayout Spacing="0">
-            <RelativeLayout VerticalOptions="Start" HeightRequest="180" BackgroundColor="#FFC926">  
+            <RelativeLayout VerticalOptions="Start" HeightRequest="180" >
+                <Image Source="bg_perfil.png" 
+                       RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=1}"
+                       Aspect="AspectFill"/>
                 
+                <Image Source="foto_perfil.png" WidthRequest="100" x:Name="Perfil"
+                       RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=.5, Constant=-60}"
+                       RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=.2}"/>
+               
+                <Label Text="Miguel de Icaza" 
+                       RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToView, ElementName=Perfil, Property=X, Factor=1}"
+                       RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToView, ElementName=Perfil, Property=Y, Factor=1, Constant=120}"/>
+
             </RelativeLayout>
 
-            <Grid BackgroundColor="#0D1F2D" HeightRequest="80">
+            <Grid BackgroundColor="#0D1F2D" HeightRequest="100">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*"/>
                     <ColumnDefinition Width="*"/>
@@ -16,12 +28,27 @@
                 <Grid.RowDefinitions>
                     <RowDefinition Height="*"/>
                 </Grid.RowDefinitions>
+            
+                <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" Grid.Column="0" Grid.Row="0">
+                    <Label TextColor="White" Text="32" FontSize="24" HorizontalTextAlignment="Center"/>
+                    <Label TextColor="White" Text="Anos" FontSize="10" HorizontalTextAlignment="Center"/>
+                </StackLayout>
+                <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" Grid.Column="1" Grid.Row="0">
+                    <Label TextColor="White" Text="23/10/1982" FontSize="24" HorizontalTextAlignment="Center"/>
+                    <Label TextColor="White" Text="nascimento" FontSize="10" HorizontalTextAlignment="Center"/>
+                </StackLayout>
             </Grid>
+
+
+
+
             <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Padding="30">
                 <Label Text="informações sobre 
                              o perfil 1 "/>
 
             </StackLayout>
+            
         </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>
