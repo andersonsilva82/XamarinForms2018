@@ -30,7 +30,7 @@ namespace App01_ControleXF.Controles
         private void ModificarBarra2()
         {
             bar2.Progress = 0;
-            bar2.ProgressTo(1, 5000, Easing.SpringIn);
+            bar2.ProgressTo(1, 5000, Easing.Linear);
         }
         private void ModificarBarra3()
         {

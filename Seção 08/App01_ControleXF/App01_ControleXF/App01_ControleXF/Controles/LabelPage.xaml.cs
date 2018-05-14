@@ -1,0 +1,30 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+using Xamarin.Forms;
+using Xamarin.Forms.Xaml;
+
+namespace App01_ControleXF.Controles
+{
+	[XamlCompilation(XamlCompilationOptions.Compile)]
+	public partial class LabelPage : ContentPage
+	{
+		public LabelPage ()
+		{
+			InitializeComponent ();
+		}
+        private async void Rodar()
+        {
+            double x = .2;
+            for (int i = 0; i <= 20; i++)
+            {
+                x += x * i;
+                Label.Rotation += x;
+                await Task.Delay(1);
+            }
+        }
+	}
+}

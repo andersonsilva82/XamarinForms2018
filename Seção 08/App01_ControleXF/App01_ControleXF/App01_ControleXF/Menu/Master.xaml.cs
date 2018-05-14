@@ -27,7 +27,19 @@ namespace App01_ControleXF.Menu
         {
             Detail = new Controles.ProgressBarPage();
             IsPresented = false;
-
         }
-	}
+
+        private void GoBoxViewPage(object sender, EventArgs args)
+        {
+            Detail = new Controles.BoxViewPage();
+            IsPresented = false;
+        }
+
+        private void GoLabelPage(object sender, EventArgs args)
+        {
+            Detail = new Controles.LabelPage();
+            IsPresented = false;
+        }
+
+    }
 }
